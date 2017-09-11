@@ -1,0 +1,34 @@
+body {
+  position: relative;
+}
+.menu {
+  color: white;
+  background-color: #2E3532;
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  z-index: 5;
+}
+
+.main-container {
+  position: relative;
+  background-color: #E0E2DB;
+  height: 200vh;
+
+  h1 {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 75px;
+    text-align: center;
+    padding: 60px 0 20px 0;
+    letter-spacing: 5px;
+    color: #800D09;
+  }
+  .main-image {
+    background: url("../william-felker-38344.jpg") no-repeat center center;
+    background-size: contain;
+    margin: auto;
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+  }
+}
