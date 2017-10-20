@@ -1,34 +1,110 @@
 body {
   position: relative;
+  font-family: 'Roboto Slab', 'Palatino',serif;
+  font-weight: 100;
 }
-.menu {
+header {
   color: white;
   background-color: #2E3532;
   position: fixed;
   width: 100%;
   height: 40px;
   z-index: 5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    a {
+      font-family: 'Amatic SC', cursive;
+      font-size: 22px;
+      margin-left: 20px;
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  .menu {
+    margin-right: 20px;
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      li {
+        padding: 10px;
+        a  {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }
 
 .main-container {
-  position: relative;
-  background-color: #E0E2DB;
-  height: 200vh;
+  .title-section {
+    height: 100vh;
 
-  h1 {
-    font-family: 'Berkshire Swash', cursive;
-    font-size: 75px;
-    text-align: center;
-    padding: 60px 0 20px 0;
-    letter-spacing: 5px;
-    color: #800D09;
+    h1 {
+      font-family: 'Amatic SC', cursive;
+      font-size: 100px;
+      text-align: center;
+      padding: 60px 0 20px 0;
+      letter-spacing: 10px;
+      color: #800D09;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      a:hover {
+        color: red;
+      }
+    }
+
+    .main-image {
+      background: url("../william-felker-38344.jpg") no-repeat center center;
+      background-size: contain;
+      margin: auto;
+      border-radius: 50%;
+      height: 400px;
+      width: 400px;
+    }
+
+    .hr {
+      width: 80%;
+      border-top: 1px solid #800D09;
+      margin: 30px auto;
+    }
   }
-  .main-image {
-    background: url("../william-felker-38344.jpg") no-repeat center center;
-    background-size: contain;
+
+.bottom-section {
+  .primary-content {
+    width: 90%;
     margin: auto;
-    border-radius: 50%;
-    height: 500px;
-    width: 500px;
+
+    h2 {
+      font-family: 'Amatic SC', cursive;
+      font-size: 30px;
+    }
+
+    p {
+      padding: 0 15px;
+    }
   }
+}
+
+}
+footer {
+  color: white;
+  background-color: #2E3532;
+  height: 60px;
+  width: 100%;
 }
