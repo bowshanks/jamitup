@@ -3,7 +3,7 @@
    License: none (public domain)
 */
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC|Berkshire+Swash|Roboto+Slab:100,300,400");
-@import url("https://fonts.googleapis.com/css?family=Amethysta");
+@import url("https://fonts.googleapis.com/css?family=Bungee+Shade|Linden+Hill");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -128,8 +128,57 @@ footer {
   height: 60px;
   width: 100%; }
 
-@media (max-width: 768px) {
-  header {
-    display: none; }
-  footer {
-    display: none; } }
+.test-container .title-holder {
+  width: 100%;
+  padding: 20px; }
+  .test-container .title-holder .title {
+    width: 100%;
+    border-bottom: 1px solid black;
+    margin: auto;
+    text-align: center;
+    font-family: 'Bungee Shade', cursive;
+    font-size: 45px; }
+    .test-container .title-holder .title .title-color-one {
+      color: red; }
+    .test-container .title-holder .title .title-color-two {
+      color: orange; }
+    .test-container .title-holder .title .title-color-three {
+      color: #e7e709; }
+    .test-container .title-holder .title .title-color-four {
+      color: green; }
+    .test-container .title-holder .title .title-color-five {
+      color: blue; }
+    .test-container .title-holder .title .title-color-six {
+      color: indigo; }
+
+.test-container .loading {
+  width: 100%;
+  font-family: 'Linden Hill', serif;
+  font-weight: 100;
+  padding-top: 20px; }
+  .test-container .loading .loading-title {
+    font-size: 30px;
+    text-align: center; }
+  .test-container .loading .loading-action {
+    font-family: sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    color: #d0d0d0; }
+  .test-container .loading .loading-description {
+    width: 100%;
+    padding: 0 30px; }
+
+.test-container .backup {
+  font-family: 'Linden Hill', serif;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 20px; }
+  .test-container .backup .ty {
+    font-size: 30px; }
+
+header {
+  display: none; }
+
+footer {
+  display: none; }
