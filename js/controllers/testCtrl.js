@@ -9,7 +9,7 @@ angular.module('jamitup').controller('testCtrl',function($scope, $location){
     $scope.isLoading = false;
     $scope.url = value;
     $scope.tag.setAttribute("href", value);
-    location.href = $scope.url;
+    // location.href = $scope.url;
     $scope.$apply();
   }, function(reason) {
     console.error('getSMSUrl',reason);
@@ -29,12 +29,12 @@ angular.module('jamitup').controller('testCtrl',function($scope, $location){
             url = "sms:1-408-555-1212?body=" + encodeURIComponent("HELLO WORLD");
           }
 
-      setTimeout(setCountDown3,800);
-      setTimeout(setCountDown2,1600);
-      setTimeout(setCountDown1,2400);
+      setTimeout(setCountDown3,300);
+      setTimeout(setCountDown2,600);
+      setTimeout(setCountDown1,900);
       setTimeout(function(){
         resolve(url);
-      },2600);
+      },1000);
     });
   }
 
