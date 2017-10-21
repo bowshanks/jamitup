@@ -8,11 +8,11 @@ angular.module('jamitup').controller('testCtrl',function($scope, $location){
 
       if (ua.indexOf("iphone") > -1 || ua.indexOf("ipad") > -1)
           {
-            url = "sms:1-408-555-1212?body=" + encodeURIComponent("I'm at ");
+            url = "sms:1-408-555-1212&body=" + encodeURIComponent("HELLO WORLD");
           }
       else
           {
-            url = "sms:1-408-555-1212?body=" + encodeURIComponent("I'm at ");
+            url = "sms:1-408-555-1212?body=" + encodeURIComponent("HELLO WORLD");
           }
       resolve(url);
     });
