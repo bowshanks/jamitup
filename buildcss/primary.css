@@ -2,8 +2,8 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Berkshire+Swash|Roboto+Slab:100,300,400");
-@import url("https://fonts.googleapis.com/css?family=Bungee+Shade|Linden+Hill");
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Berkshire+Swash|Amiri");
+@import url("https://fonts.googleapis.com/css?family=Overpass:300");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -51,8 +51,18 @@ table {
 
 body {
   position: relative;
-  font-family: 'Roboto Slab', 'Palatino',serif;
+  font-family: 'Amiri', serif;
   font-weight: 100; }
+
+h4 {
+  font-size: 25px;
+  font-family: "Overpass", sans-serif; }
+
+button, input[type="button"] {
+  border-radius: 0;
+  border-style: none;
+  border-width: 0;
+  padding: 0; }
 
 header {
   color: white;
@@ -60,13 +70,14 @@ header {
   position: fixed;
   width: 100%;
   height: 40px;
+  font-family: "Overpass", sans-serif;
   z-index: 5;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center; }
   header .logo a {
-    font-family: 'Amatic SC', cursive;
+    font-family: "Berkshire Swash";
     font-size: 22px;
     margin-left: 20px;
     color: white;
@@ -87,10 +98,16 @@ header {
           color: white;
           text-decoration: none; }
 
+footer {
+  color: white;
+  background-color: #2E3532;
+  height: 60px;
+  width: 100%; }
+
 .main-container .title-section {
   height: 100vh; }
   .main-container .title-section h1 {
-    font-family: 'Amatic SC', cursive;
+    font-family: "Berkshire Swash";
     font-size: 100px;
     text-align: center;
     padding: 60px 0 20px 0;
@@ -108,77 +125,163 @@ header {
     border-radius: 50%;
     height: 400px;
     width: 400px; }
-  .main-container .title-section .hr {
-    width: 80%;
-    border-top: 1px solid #800D09;
-    margin: 30px auto; }
 
-.main-container .bottom-section .primary-content {
-  width: 90%;
-  margin: auto; }
-  .main-container .bottom-section .primary-content h2 {
-    font-family: 'Amatic SC', cursive;
-    font-size: 30px; }
-  .main-container .bottom-section .primary-content p {
-    padding: 0 15px; }
-
-footer {
-  color: white;
-  background-color: #2E3532;
-  height: 60px;
-  width: 100%; }
-
-.test-container .title-holder {
-  width: 100%;
-  padding: 20px; }
-  .test-container .title-holder .title {
-    width: 100%;
-    border-bottom: 1px solid black;
+.main-container .bottom-section .description-holder {
+  padding: 150px 0; }
+  .main-container .bottom-section .description-holder h4 {
+    text-align: center;
+    margin-bottom: 20px; }
+  .main-container .bottom-section .description-holder .description {
+    width: 70%;
+    font-size: 20px;
     margin: auto;
     text-align: center;
-    font-family: 'Bungee Shade', cursive;
-    font-size: 45px; }
-    .test-container .title-holder .title .title-color-one {
-      color: red; }
-    .test-container .title-holder .title .title-color-two {
-      color: orange; }
-    .test-container .title-holder .title .title-color-three {
-      color: #e7e709; }
-    .test-container .title-holder .title .title-color-four {
-      color: green; }
-    .test-container .title-holder .title .title-color-five {
-      color: blue; }
-    .test-container .title-holder .title .title-color-six {
-      color: indigo; }
+    font-weight: 300;
+    line-height: 25px; }
 
-.test-container .loading {
+.main-container .bottom-section .products {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .main-container .bottom-section .products .product {
+    height: 400px;
+    width: 30%;
+    display: inline-block;
+    position: relative; }
+    .main-container .bottom-section .products .product img {
+      display: block;
+      margin: auto;
+      height: 90%; }
+    .main-container .bottom-section .products .product h6 {
+      text-align: center;
+      padding: 10px 0; }
+
+.main-container .bottom-section .about-holder {
+  background-color: #E1E8E5;
+  width: 85%;
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .main-container .bottom-section .about-holder .about-left {
+    height: 80vh;
+    width: 50%;
+    background: url("https://images.unsplash.com/photo-1464454709131-ffd692591ee5");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .main-container .bottom-section .about-holder .about-right {
+    width: 50%;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Overpass", sans-serif; }
+    .main-container .bottom-section .about-holder .about-right span {
+      font-size: 10px;
+      letter-spacing: 1px;
+      color: #686767; }
+    .main-container .bottom-section .about-holder .about-right .about-quote {
+      font-family: "Amiri", serif;
+      font-size: 22px;
+      padding: 10px 0; }
+    .main-container .bottom-section .about-holder .about-right button {
+      padding: 10px 15px;
+      color: white;
+      background-color: #2E3532;
+      cursor: pointer; }
+
+.main-container .bottom-section .recipe-holder h4 {
+  font-family: "Overpass", sans-serif;
+  font-size: 25px;
+  text-align: center; }
+
+.main-container .bottom-section .recipe-holder .recipe {
   width: 100%;
-  font-family: 'Linden Hill', serif;
-  font-weight: 100;
-  padding-top: 20px; }
-  .test-container .loading .loading-title {
-    font-size: 30px;
-    text-align: center; }
-  .test-container .loading .loading-action {
-    font-family: sans-serif;
-    font-size: 30px;
-    text-align: center;
-    padding: 20px;
-    color: #d0d0d0; }
-  .test-container .loading .loading-description {
-    width: 100%;
-    padding: 0 30px; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; }
+  .main-container .bottom-section .recipe-holder .recipe .recipe1 {
+    background: url("https://images.unsplash.com/photo-1495147466023-ac5c588e2e94"); }
+  .main-container .bottom-section .recipe-holder .recipe .recipe2 {
+    background: url("https://images.unsplash.com/photo-1497730355818-1a1dff6ffd25"); }
+  .main-container .bottom-section .recipe-holder .recipe .recipe3 {
+    background: url("https://images.unsplash.com/photo-1496412705862-e0088f16f791"); }
+  .main-container .bottom-section .recipe-holder .recipe .recipe-image {
+    height: 400px;
+    width: 65%;
+    margin: 20px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; }
+    .main-container .bottom-section .recipe-holder .recipe .recipe-image .recipe-title {
+      width: 100%;
+      padding: 15px;
+      background-color: rgba(46, 53, 50, 0.6);
+      color: white;
+      font-family: "Overpass", sans-serif;
+      font-size: 20px; }
 
-.test-container .backup {
-  font-family: 'Linden Hill', serif;
-  font-size: 12px;
-  text-align: center;
-  padding-top: 20px; }
-  .test-container .backup .ty {
-    font-size: 30px; }
+.main-container .bottom-section .recipe-holder .dots {
+  width: 100%;
+  height: 20px;
+  text-align: center; }
+  .main-container .bottom-section .recipe-holder .dots .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #ffffff;
+    border: 1px solid #2E3532;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease; }
+  .main-container .bottom-section .recipe-holder .dots .active {
+    background-color: #2E3532; }
 
-header {
-  display: none; }
+.main-container .bottom-section .recipe-holder .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s; }
 
-footer {
-  display: none; }
+@-webkit-keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+@media (max-width: 820px) {
+  .main-container .bottom-section .products .product {
+    height: 300px; } }
+
+@media (max-width: 640px) {
+  .main-container .bottom-section .products {
+    display: block; }
+    .main-container .bottom-section .products .product {
+      display: block;
+      margin: auto;
+      width: 70%;
+      height: auto; }
+    .main-container .bottom-section .products img {
+      width: 100%; }
+    .main-container .bottom-section .products h6 {
+      font-size: 20px; } }
+
+.main-container .hr {
+  width: 80%;
+  border-top: 1px solid #800D09;
+  margin: 30px auto; }

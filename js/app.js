@@ -10,6 +10,11 @@ jamitup.config(function($stateProvider,$urlRouterProvider,$httpProvider){
       templateUrl: './views/home.html',
       controller: 'mainCtrl'
     })
+    .state('recipes',{
+      url: '/recipes',
+      templateUrl: './views/recipes.html',
+      controller: 'mainCtrl'
+    })
 });
 
 jamitup.run(function($rootScope, $state) {

@@ -1,14 +1,10 @@
-body {
-  position: relative;
-  font-family: 'Roboto Slab', 'Palatino',serif;
-  font-weight: 100;
-}
 header {
   color: white;
   background-color: #2E3532;
   position: fixed;
   width: 100%;
   height: 40px;
+  font-family: $sansSerif;
   z-index: 5;
   display: flex;
   flex-direction: row;
@@ -17,7 +13,7 @@ header {
 
   .logo {
     a {
-      font-family: 'Amatic SC', cursive;
+      font-family: $cursive;
       font-size: 22px;
       margin-left: 20px;
       color: white;
@@ -47,61 +43,6 @@ header {
   }
 }
 
-.main-container {
-  .title-section {
-    height: 100vh;
-
-    h1 {
-      font-family: 'Amatic SC', cursive;
-      font-size: 100px;
-      text-align: center;
-      padding: 60px 0 20px 0;
-      letter-spacing: 10px;
-      color: #800D09;
-
-      a {
-        text-decoration: none;
-        color: inherit;
-      }
-
-      a:hover {
-        color: red;
-      }
-    }
-
-    .main-image {
-      background: url("../william-felker-38344.jpg") no-repeat center center;
-      background-size: contain;
-      margin: auto;
-      border-radius: 50%;
-      height: 400px;
-      width: 400px;
-    }
-
-    .hr {
-      width: 80%;
-      border-top: 1px solid #800D09;
-      margin: 30px auto;
-    }
-  }
-
-.bottom-section {
-  .primary-content {
-    width: 90%;
-    margin: auto;
-
-    h2 {
-      font-family: 'Amatic SC', cursive;
-      font-size: 30px;
-    }
-
-    p {
-      padding: 0 15px;
-    }
-  }
-}
-
-}
 footer {
   color: white;
   background-color: #2E3532;

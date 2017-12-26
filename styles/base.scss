@@ -1,1 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Berkshire+Swash|Roboto+Slab:100,300,400');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Berkshire+Swash|Amiri');
+@import url('https://fonts.googleapis.com/css?family=Overpass:300');
+
+$cursive: 'Amatic SC', cursive;
+$serif: 'Amiri', serif;
+$sansSerif: 'Overpass', sans-serif;
+$berkshire: 'Berkshire Swash';
+$cursive: 'Berkshire Swash';
+
+body {
+  position: relative;
+  font-family: 'Amiri', serif;
+  font-weight: 100;
+}
+
+
+h4 {
+  font-size: 25px;
+  font-family: $sansSerif;
+}
+
+button, input[type="button"] {
+  border-radius: 0;
+  border-style: none;
+  border-width: 0;
+  padding: 0;
+}

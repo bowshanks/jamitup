@@ -9,20 +9,75 @@
     </div>
   </section>
   <section class="bottom-section">
-    <h2>piquant preserves</h2>
-    <div class="primary-content">
-      <h2>Heading I</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <h2>Heading II</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <h2>Heading III</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <h2>Heading IV</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <h2>Heading V</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </div>
+    <section class="description-holder">
+      <h4>piquant preserves</h4>
+      <div class="description">
+        For making jelly, use fruit, under-ripe. It will jell more easily, and, not being as sweet as otherwise, will possess a finer flavor. For jelly use an equal amount of sugar to a pint of juice. The old rule holds good—a pound of sugar to a pint of juice. Cook fifteen to twenty minutes. Fruit juice will jell more quickly if the sugar is heated in the oven before being added.
+      </div>
+    </section>
+    <div class="hr"></div>
+    <section class="products">
+      <div class="product">
+
+        <img src="https://images.unsplash.com/photo-1471943311424-646960669fbc" alt="jelly">
+        <h6>Mango Habanero</h6>
+      </div>
+      <div class="product">
+
+        <img src="https://images.unsplash.com/photo-1471943311424-646960669fbc" alt="jelly">
+        <h6>Raspberry Jalepeno</h6>
+      </div>
+      <div class="product">
+
+        <img src="https://images.unsplash.com/photo-1471943311424-646960669fbc" alt="jelly">
+        <h6>Cranberry Jalepeno</h6>
+      </div>
+    </section>
+    <div class="hr"></div>
+    <section class="about-holder">
+      <div class="about-left">
+
+      </div>
+      <div class="about-right">
+        <div class="about-info">
+          <span>sweet n' spicy</span>
+          <div class="about-quote">
+            Good cooking is everywhere appreciated, and there is no reason why it should not be the rule instead of the exception.
+          </div>
+          <a href="/about"><button type="button" name="button">my story</button></a>
+        </div>
+      </div>
+    </section>
+    <div class="hr"></div>
+    <section class="recipe-holder">
+      <h4>recipes</h4>
+      <div class="recipe" ng-show="recipe1" ui-sref="recipes">
+        <div class="recipe-image recipe1 fade">
+          <div class="recipe-title">
+            Something Good . . .
+          </div>
+        </div>
+      </div>
+      <div class="recipe" ng-show="recipe2" ui-sref="recipes">
+        <div class="recipe-image recipe2 fade">
+          <div class="recipe-title">
+            Tasty tasty . . .
+          </div>
+        </div>
+      </div>
+      <div class="recipe" ng-show="recipe3" ui-sref="recipes">
+        <div class="recipe-image recipe3 fade">
+          <div class="recipe-title">
+            Food? . . .
+          </div>
+        </div>
+      </div>
+      <div class="dots">
+        <span class="dot fade" ng-click="switchRecipe(1)" ng-class="{'active': recipe1}"></span>
+        <span class="dot fade" ng-click="switchRecipe(2)" ng-class="{'active': recipe2}"></span>
+        <span class="dot fade" ng-click="switchRecipe(3)" ng-class="{'active': recipe3}"></span>
+      </div>
+    </section>
   </section>
-
-
 </div>
+<!-- Jalepeno, raspberry jal, cranberry jal, raspberry habanero, mango habanero, cranberry habanero, plum habanero -->
